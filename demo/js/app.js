@@ -9,7 +9,7 @@ var myapp = angular.module('myApp', [
 
 // service to $broadcast 'run new a/b test' every 20 seconds.
 myapp.service('tictoc', function ($interval, $rootScope) {
-  var count = 0, max = 20, title;
+  var count = 0, max = 2, title;
   $interval(function () {
     // old-school update the page title to avoid broadcasting on the rootScope every second
     if (!title) {
